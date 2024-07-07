@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aftersignupbg"
+    tools:context=".MessageCenterActivity">
+
+    <ImageView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="help"
+        app:layout_constraintEnd_toStartOf="@+id/collections"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame17" />
+
+    <ImageView
+        android:id="@+id/collections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="collections"
+        app:layout_constraintEnd_toStartOf="@+id/msgcenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame16" />
+
+    <ImageView
+        android:id="@+id/msgcenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="msgcenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame15" />
+
+    <ImageView
+        android:id="@+id/imageView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help"
+        app:srcCompat="@drawable/frame41" />
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="378dp"
+        android:layout_height="385dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView53"
+        app:srcCompat="@drawable/img3" />
+
+    <TextView
+        android:id="@+id/rere"
+        android:layout_width="313dp"
+        android:layout_height="182dp"
+        android:gravity="center"
+        android:padding="70dp"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView56"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView56"
+        app:layout_constraintRight_toRightOf="@+id/imageView56"
+        app:layout_constraintTop_toTopOf="@+id/imageView56" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Your message here to the seller and he will be updated as soon as possible"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView56" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

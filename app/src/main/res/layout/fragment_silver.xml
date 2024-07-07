@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aftersignupbg"
+    tools:context=".ui.main.SilverFragment">
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/happybackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/frameexport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+
+    <ImageView
+        android:id="@+id/talbattiehouse"
+        android:layout_width="229dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/talbattiehouse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+    <TextView
+        android:id="@+id/points1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/image1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewtalbat"
+        android:layout_width="152dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/couponcodetext"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center|center_horizontal|left"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/talbattiehouse" />
+
+    <TextView
+        android:id="@+id/points250"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/pointsview"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center|left"
+        android:text="1000 credits"
+        app:layout_constraintBottom_toBottomOf="@+id/textviewtalbat"
+        app:layout_constraintEnd_toEndOf="@+id/textviewtalbat"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="@+id/textviewtalbat"
+        app:layout_constraintTop_toTopOf="@+id/textviewtalbat"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/hand_animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/handscratch"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@+id/points250"
+        app:layout_constraintBottom_toBottomOf="@+id/points250"
+        app:layout_constraintStart_toStartOf="@+id/points250"
+        app:layout_constraintEnd_toEndOf="@+id/points250"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/hand_animation_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/handscratch" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

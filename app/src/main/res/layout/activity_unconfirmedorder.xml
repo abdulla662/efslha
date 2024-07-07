@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aftersignupbg"
+    tools:context=".UnconfirmedOrder">
+
+    <TextView
+        android:id="@+id/result11"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/plaintextfigure"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="377dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/plaintextfigure"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <Button
+        android:id="@+id/wallet_btn"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/primary_green"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:onClick="wallet"
+        app:icon="@drawable/wallet"
+        app:iconGravity="textStart"
+        app:iconSize="25dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/order_history_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/order_history_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="orderthis1"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/orderhistoryicon" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="help"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/helpicon" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="274dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/coderequestfigure"
+        android:fontFamily="@font/inter_semibold"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Horray!"
+        android:text="Unconfirmed Orders"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/confirmorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#D9D9D9"
+        android:fontFamily="@font/inter_semibold"
+        android:onClick="requestnow"
+        android:text="confirm  order"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/trash1"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main"
+        app:layout_constraintEnd_toEndOf="@+id/main"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/main"
+        app:layout_constraintTop_toTopOf="@+id/main"
+        app:layout_constraintVertical_bias="0.827"
+        app:srcCompat="@drawable/trash" />
+
+    <ImageView
+        android:id="@+id/trash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/confirmorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result2"
+        app:layout_constraintVertical_bias="0.756"
+        app:srcCompat="@drawable/ellipse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

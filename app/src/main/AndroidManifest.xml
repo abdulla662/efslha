@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".donedeal"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".Help1"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".ui.main.Feedback"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".couponsmanger"
+            android:exported="false"
+            android:label="@string/title_activity_couponsmanger"
+            android:theme="@style/Theme.Efselha.NoActionBar" />
+
+        <activity
+            android:name=".choosefromwallet"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".paypal"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".forgotpassword"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".OfferActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".YourOffersActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".CollectorPackage"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".UnconfirmedOrder"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".Requesters"
+            android:exported="true"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".RequestNow"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".WalletActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".OrderHistory"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".MessageCenterActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".HelpActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".CollectorCollections"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".CollectionCodeActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".PackagesActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".PlasticActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".CanActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".PaperActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".GlassActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".CollectorHome"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".CollectorLocation"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".userpage"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".CollectorSignup"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".SellerSignup"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".LoginSignupActivity"
+            android:exported="false"
+            android:theme="@style/DemoTheme" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/DemoTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

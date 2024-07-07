@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebg"
+    tools:context=".OfferActivity">
+
+    <ImageView
+        android:id="@+id/help_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="help"
+        app:layout_constraintEnd_toStartOf="@+id/orders_history_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame17" />
+
+    <ImageView
+        android:id="@+id/orders_history_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="collections"
+        app:layout_constraintEnd_toStartOf="@+id/message_center_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame16" />
+
+    <ImageView
+        android:id="@+id/message_center_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="msgcenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/feedicon" />
+
+    <ImageView
+        android:id="@+id/offer_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/glass"
+        app:layout_constraintTop_toBottomOf="@+id/help_btn"
+        android:layout_marginTop="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:tint="@color/white" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/offer_icon"
+        android:id="@+id/offer_type"
+        app:layout_constraintRight_toRightOf="@id/offer_icon"
+        app:layout_constraintLeft_toLeftOf="@id/offer_icon"
+        tools:text="Glass"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:padding="6dp"
+        android:fontFamily="@font/inter_semibold"
+
+        />
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/offer_type">
+
+        <LinearLayout
+            android:id="@+id/offer_items_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <!-- Add your scrollable content here -->
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/offer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:src="@drawable/yes"
+        app:maxImageSize="35dp"
+        app:tint="@color/white"
+        app:backgroundTint="@color/primary_green"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<!-- res/layout/custom_dialog.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose an Option"
+        android:textSize="20sp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/get_money_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Money"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/get_offers_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Offers"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

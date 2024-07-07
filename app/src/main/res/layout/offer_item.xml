@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/offer_item_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green"
+    android:backgroundTint="@color/green">
+
+    <TextView
+        android:id="@+id/seller_first_letter"
+
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="12dp"
+        android:background="@drawable/plaintextfigure"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="55sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="A" />
+
+    <Button
+        android:id="@+id/view_offer_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:text="View Offer"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:backgroundTint="#D8D8D8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/layout_details"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_details"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="14dp"
+        android:gravity="center|left"
+        android:orientation="vertical"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seller_first_letter"
+        app:layout_constraintLeft_toRightOf="@+id/seller_first_letter"
+        app:layout_constraintTop_toTopOf="@+id/seller_first_letter">
+
+        <TextView
+            android:id="@+id/seller_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingVertical="4dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="Name name" />
+
+        <TextView
+            android:id="@+id/seller_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingVertical="4dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="01012345678" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

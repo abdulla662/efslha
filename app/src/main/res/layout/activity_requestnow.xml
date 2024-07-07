@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aftersignupbg"
+    tools:context=".RequestNow">
+
+    <Button
+        android:id="@+id/wallet_btn"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/primary_green"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:onClick="wallet"
+        app:icon="@drawable/wallet"
+        app:iconGravity="textStart"
+        app:iconSize="25dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orderhis"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/orderhis"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="history"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/orderhistoryicon" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="help"
+        app:layout_constraintEnd_toStartOf="@+id/orderhis"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/helpicon" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="244dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/coderequestfigure"
+        android:ems="10"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:hint="4xszp"
+        android:inputType="none"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="357dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Please remember the code of collection to  provide to your collector."
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="357dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="212dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Once Your collector submit the code Your points will be deducted from your balance."
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="357dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="328dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Note that the validity of the code lasts for  only six hours after requesting redeem, otherwise you will have to request a new code."
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+
+    <Button
+        android:id="@+id/confirmorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#D9D9D9"
+        android:fontFamily="@font/inter_semibold"
+        android:foregroundGravity="center"
+        android:onClick="requesters"
+        android:text="Request now"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D9D9D9"
+        android:text="Change Code"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

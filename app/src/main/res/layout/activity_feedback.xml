@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aftersignupbg"
+    tools:context=".ui.main.Feedback">
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/feedbackrec" />
+
+    <EditText
+        android:id="@+id/nametext"
+        android:layout_width="342dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter you name "
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="342dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="148dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your Email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="342dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="240dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Subject"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="342dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="328dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Message"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des"
+        app:srcCompat="@drawable/frammmme" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D9D9D9"
+        android:fontFamily="@font/inter_bold"
+        android:text="Send Message"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des"
+        app:layout_constraintVertical_bias="0.688" />
+</androidx.constraintlayout.widget.ConstraintLayout>

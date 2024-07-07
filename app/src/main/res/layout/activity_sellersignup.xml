@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerSignup">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/boyofaftersignup" />
+
+    <EditText
+        android:id="@+id/seller_name_et"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/plaintextfigure"
+        android:backgroundTint="#D9D9D9"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Type Your Name"
+
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="336dp"
+        android:background="@drawable/plaintextfigure"
+        android:backgroundTint="#D9D9D9"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="E-mail Address"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/plaintextfigure"
+        android:backgroundTint="#D9D9D9"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+    <EditText
+        android:id="@+id/retype"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="468dp"
+        android:background="@drawable/plaintextfigure"
+        android:backgroundTint="#D9D9D9"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Re-Type Password"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="394dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/efslha" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="151dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/plaintextfigure"
+        android:backgroundTint="#D9D9D9"
+        android:fontFamily="@font/inter_semibold"
+        android:onClick="login"
+        android:text="Sign Up"
+        android:textColor="#28A37A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retype"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <EditText
+        android:id="@+id/seller_phone_et"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:background="@drawable/plaintextfigure"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="enter your number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_name_et" />
+
+    <ImageView
+        android:id="@+id/eyeToggle"
+        android:layout_width="36dp"
+        android:layout_height="19dp"
+        android:layout_gravity="center"
+        android:src="@drawable/eyeopen"
+        app:layout_constraintBottom_toBottomOf="@+id/pass"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="@+id/pass"
+        app:layout_constraintTop_toTopOf="@+id/pass"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <ImageView
+        android:id="@+id/eyeToggle1"
+        android:layout_width="36dp"
+        android:layout_height="19dp"
+        android:layout_gravity="center"
+        android:src="@drawable/eyeopen"
+        app:layout_constraintBottom_toBottomOf="@+id/retype"
+        app:layout_constraintEnd_toEndOf="@+id/retype"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/retype"
+        app:layout_constraintTop_toTopOf="@+id/retype"
+        app:layout_constraintVertical_bias="0.538" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
